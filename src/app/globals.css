@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -13,8 +14,17 @@
   }
 }
 
+/* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: IRANSans, system-ui ;
+  font-weight: 450;
+  direction: rtl;
+  margin: 0;
 }
+h1, h2, h3, h4, h5, h6,input, textarea {
+  font-family: IRANSans, serif ;
+}
+h1 {
+  font-weight: bold;
+}
+
