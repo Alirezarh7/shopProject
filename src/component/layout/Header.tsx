@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Menu, Search, ShoppingCart, User ,ShoppingCartIcon } from "lucide-react";
+import { Menu, Search, ShoppingCart, User  } from "lucide-react";
+import {ShopIcon} from "@/component/icon/Icon";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -10,15 +11,14 @@ export default function Header() {
     <header className="shadow-sm border-b bg-white">
       <div className="container mx-auto flex items-center justify-between p-3">
         {/* Left Section */}
-        <div className="flex items-center gap-3">
-          <button className="md:hidden p-2">
-            <Menu className="w-6 h-6 text-red-600" />
+        <div className="flex items-center gap-1">
+          <button className="p-1">
+            <ShopIcon />
           </button>
-          <ShoppingCartIcon className="w-6 h-6 text-red-600" />
         </div>
 
         {/* Search Box */}
-        <div className="hidden md:flex flex-1 mx-6">
+        <div className="flex flex-1 mx-6">
           <div className="relative w-full">
             <input
               type="text"
@@ -30,7 +30,7 @@ export default function Header() {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center gap-4">
+        <div className="max-md:hidden flex items-center gap-4">
           <button className="p-2">
             <ShoppingCart className="w-6 h-6 text-red-600" />
           </button>
